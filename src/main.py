@@ -12,8 +12,9 @@ def analizar_texto(frase_arreglada: str) -> tuple[int, int, int]:
     Recibe el texto preparado y devuelve una tupla con tres datos: número de caracteres —incluidos los espacios interiores—, número de palabras y si contiene la palabra completa "python".
     :param caracter: Devuelve el número de caracteres de la frase.
     :param palabras: Devuelve el número de palabras de la frase.
-    :param python: Devuelve un 0 o un 1 si tiene o no la palabra python en ella
-    :param lista_palabras: separa las palabras de sus espacios
+    :param python: Devuelve un 0 o un 1 si tiene o no la palabra python en ella.
+    :param lista_palabras: Separa las palabras de sus espacios.
+    :return: Decuelve 3 int que definen las proporciones de una frase y encuentra una palabra concreta dentro de ella.
     """
     lista_palabras = frase_arreglada.split()
     caracter: int = len(frase_arreglada)
